@@ -1,4 +1,44 @@
 <!doctype html>
   <html>
   <head>
-  <meta cha>
+  <meta charset="utf-8"> 
+<title> Calcolatore dei km percorsi</title>
+</head>
+<body>
+<script type="text/javascript">
+var km1 = 0;
+var km2 = 0;
+var km3 = 0;
+var km4 = 0;
+
+var destinazione1 = "";
+var destinazione2 = "";
+var destinazione3 = "";
+var destinazione4 = "";
+
+var media= 0.0;
+
+destinazione1 = window.prompt("Inserisci la prima destinazione");
+km1 = Number(window.prompt("Inserisci i km percorsi per la prima destinazione"));
+
+destinazione2 = window.prompt("Inserisci la seconda destinazione");
+km2 = Number(window.prompt("Inserisci i km percorsi per la seconda destinazione"));
+
+destinazione3 = window.prompt("Inserisci la terza destinazione");
+km3 = Number(window.prompt("Inserisci i km percorsi per la terza destinazione"));
+
+destinazione4 = window.prompt("Inserisci la quarta  destinazione");
+km4 = Number(window.prompt("Inserisci i km percorsi per la quarta destinazione"));
+
+
+media = (km1 + km2 + km3 + km4) / 4;
+
+var para = document.createElement("p");
+para.textContent = "le destinazioni inserite sono: "+ destinazione1 +", "+ destinazione2 +", "+ destinazione3 +", "+ destinazione4";
+
+
+var paraMedia = document.createElement("p");
+paraMedia.textContent = "la media dei KM percorsi sono: "+ km1 +", "+ km2 +", "+ km3 +", "+ km4";
+</script>
+</body>
+</html>
