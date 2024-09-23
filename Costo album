@@ -3,3 +3,36 @@
 <head>
 <title>Costo Album </title>
 </head>
+<body bgcolor="lemonchiffon")
+<center›<h1> Verifica prezzo vinili </h1›</center>
+
+<script type="text/javascript">
+
+var nome="":
+var artista="";
+var quantità=0;
+var costo unitario=0.0;
+
+var prezzo=0.0;
+
+nome= (window.prompt ("Inserisci il nome del vinile"));
+artista= (window.prompt ("Inserisci il nome dell'artista"'));
+quantità=Number (window.prompt ("Inserisci la quantità"));
+costo_unitario=Number (window.prompt ("Inserisci il prezzo del vinile"));
+
+if(quantità>1)
+{
+prezzo=quantità*costo
+}
+else
+i {
+prezzo=costo unitario;
+if (prezzo>100)
+document.write ("il vinile, "nome dell artista", artista" è soggetto a uno sconto del 10%");
+else
+{
+document.write ("Il vinile ", nome, " dell'artista", artista, " non è soggetto a uno sconto del 104");
+}
+</script>
+</body>
+</html>
